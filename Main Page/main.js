@@ -22,4 +22,10 @@ elementToHover.addEventListener('mouseover', function() {
   audioElement.play();
 });
 
+const navLinks = document.querySelectorAll('nav ul li a');
 
+for (const link of navLinks) {
+  if (link.href === window.location.pathname) {
+    link.classList.add('active');
+  }
+}

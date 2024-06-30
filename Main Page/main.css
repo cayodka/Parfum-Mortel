@@ -63,10 +63,11 @@ header, h1 {
     font-size: 50px;
     text-decoration: none;
 }
-a#page-link1:hover {
-    color: red;
-    text-shadow: 2px 2px 5px gray;
+li#page-link1:hover {
+    color: rgb(91, 91, 91);
+    text-shadow: 2px 2px 5px rgb(36, 36, 36);
 }
+
 div#phrase-container {
     display: flex;
     justify-content: space-around;

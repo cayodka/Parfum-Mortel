@@ -119,3 +119,7 @@ img.frame {
     width: 130px;
     height: auto;
 }
+#frame-container a:hover{
+    box-shadow: 10px 10px 10px black;
+    transform: scale(1.05);
+}
