@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.love-ya-like-a-sister-regular {
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-style: normal;
+} 
+.ingrid-darling-regular {
+    font-family: "Ingrid Darling", cursive;
+    font-weight: 400;
+    font-style: normal;
+}  
+body {
+    background-image: url(../assets/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 30%;
+}
+div#loading-Screen {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+img.bg {
+    opacity: 40%;
+    width: 250px;
+    height: 330px;
+}
+img.loader {
+    width: 260px;
+    height: 350px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 60px 0px 50px;
+}
+header, h1 {
+    font-family: "Ingrid Darling", cursive;
+    color: black;
+    font-size: 60px;
+}
+#link-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 750px;
+    height: 70px;
+}
+#link-container,a {
+    padding: 5px;
+    font-family: "Ingrid Darling", cursive;
+    color: black;
+    font-size: 50px;
+    text-decoration: none;
+}
+a#page-link1:hover {
+    color: red;
+    text-shadow: 2px 2px 5px gray;
+}
+div#phrase-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 700px;
+    font-size: 40px;
+    font-family: "Love Ya Like A Sister", cursive;
+}
+div#img-container {
+    display: flex;
+    justify-content: center;
+}
+img#perfumes {
+    width: 1450px;
+    height: 570px;
+}
+
+#img-container button{
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    margin-top: 18vh;
+    height: 420px;
+    width: 350px;
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+}
+
+#img-container button:hover{
+    box-shadow: 20px 20px 20px 20px black;
+}

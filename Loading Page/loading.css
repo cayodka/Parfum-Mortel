@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div#Loading-Container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 150px;
+    width: 100vw;
+    height: 100vh;
+}
+img.bg {
+    opacity: 40%;
+    width: 250px;
+    height: 330px;
+}
+img.loader {
+    width: 260px;
+    height: 350px;
+}
