@@ -3,6 +3,36 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+}
+
+#loading-Screen {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 9999; 
+}
+
+#loading-Screen img {
+    max-width: 100%; 
+    max-height: 100%;
+    opacity: 50% !important;
+}
+
+.hidden {
+    display: none;
+}
+
 .love-ya-like-a-sister-regular {
     font-family: "Love Ya Like A Sister", cursive;
     font-weight: 400;
@@ -38,6 +68,21 @@ header, h1 {
     width: 750px;
     height: 70px;
 }
+
+#link-container a:hover{
+    transform: scale(1.08);
+    box-shadow: 1px 1px 40px 10px rgba(0, 0, 0, 0.589);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.178);
+    transition: all 0.1s ease-in-out;
+    z-index: 1
+}
+
+#link-container a:hover{
+    color: red;
+    z-index: 1;
+}
+
 #link-container,a {
     padding: 5px;
     font-family: "Ingrid Darling", cursive;
@@ -64,28 +109,28 @@ img#frame {
     width: 305px;
     height: auto;
 }
-div#card-container p {
+div#perfume-name {
     z-index: 3;
-    margin-left: 80px;
+    margin-left: 60px;
     margin-bottom: 3px;
-    width: 150px;
-    font-size: 25px;
+    width: 265px;
+    font-size: 18px;
     font-family: "Love Ya Like A Sister", cursive;
 }
 div#perfumes-container {
-    margin: 40px 0px 30px 108px;
-    width: 92px;
-    height: 240px;
+    margin: 15px 0px 10px 116px;
+    width: 80px;
+    height: 280px;
     overflow: hidden;
     position: relative;
 }
 img#perfumes {
     position: absolute;
     z-index: 1;
-    width: 1000px;
+    width: 620px;
     height: auto;
-    top: -190px;
-    left: -225px;
+    top: -15px;
+    left: -415px;
     object-fit: cover;
 }
 div#bio-container {
@@ -97,9 +142,50 @@ div#bio-container {
     text-align: center;
     font-family: "Love Ya Like A Sister", cursive;
 }
+#bio-container p {
+    transition: all 0.5s ease-in-out;
+    z-index: 1
+}
+
+#bio-container p:hover{
+    box-shadow: 1px 1px 30px 20px black;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.644);
+    color: aliceblue;
+    z-index: 1;    
+}
 div#flower-img-container {
+    padding-left: 20px;
     width: 380px;
     height: 410px;
+}
+img#flower {
+    width: auto;
+    height: 450px;
+}
+
+#flower-img-container {
+    transition: all 0.5s ease-in-out;
+    position: relative; 
+}
+
+#flower-img-container img:hover{
+    box-shadow: 0px 0px 50px 10px black ;
+    border-radius: 100vh;
+    border: inherit;
+    z-index: 999;
+}
+#flower-img-container:active {
+    z-index: 999; 
+    box-shadow: 1px 1px 140vh 100vh black;
+    border: 5px solid black;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: auto; 
+    height: auto;
+    background-color: rgb(255, 255, 255);
 }
 div#bottom-container {
     display: flex;
@@ -112,6 +198,7 @@ div#frame-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 10vh;
     width: 100vw;
     height: 30vh;
 }
@@ -119,7 +206,11 @@ img.frame {
     width: 130px;
     height: auto;
 }
+
 #frame-container a:hover{
-    box-shadow: 10px 10px 10px black;
     transform: scale(1.05);
+    box-shadow: 0px 0px 90px 0px black;
+    border-radius: 15px;
+    border: none;
+    background: none;
 }

@@ -1,26 +1,34 @@
 document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(function() {
-        var loadingScreen = document.getElementById("loading-Screen");
-        loadingScreen.classList.add("hidden");
-        setTimeout(function() {
-            loadingScreen.parentNode.removeChild(loadingScreen);
-        });
-    }, 2000);
+  document.body.classList.add("hidden-content");
+
+  setTimeout(function() {
+      var loadingScreen = document.getElementById("loading-Screen");
+
+   
+      loadingScreen.classList.add("hidden");
+    
+      setTimeout(function() {
+          loadingScreen.parentNode.removeChild(loadingScreen);
+
+          document.body.classList.remove("hidden-content");
+      }, 500);
+  }, 2000); 
 });
 
-const hoverbuutons = document.querySelector('#img-container');
-const audio1 = new Audio('../assets/terror.mp3')
 
-hoverbuutons.addEventListener('mouseover', function() {
-  audio1.play();
-});
+// const hoverbuutons = document.querySelector('#img-container');
+// const audio1 = new Audio('../assets/terror.mp3')
 
-const elementToHover = document.querySelector('#link-container');
-const audioElement = new Audio('../assets/turbineterror.mp3')
+// hoverbuutons.addEventListener('mouseover', function() {
+//   audio1.play();
+// });
 
-elementToHover.addEventListener('mouseover', function() {
-  audioElement.play();
-});
+// const elementToHover = document.querySelector('#link-container');
+// const audioElement = new Audio('../assets/turbineterror.mp3')
+
+// elementToHover.addEventListener('mouseover', function() {
+//   audioElement.play();
+// });
 
 const navLinks = document.querySelectorAll('nav ul li a');
 
@@ -29,3 +37,4 @@ for (const link of navLinks) {
     link.classList.add('active');
   }
 }
+
